@@ -1,5 +1,5 @@
 """Streamlit demo UI with loading spinner."""
-import streamlit as st
+
 import requests
 import time
 
