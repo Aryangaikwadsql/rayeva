@@ -1,6 +1,8 @@
-# Rayeva – AI Systems Assignment Submission ✅
+# Rayeva – AI Systems Assignment Submission 
 
 ## Role: Full Stack / AI Intern - COMPLETE
+
+##  Streamlit Cloud Deployment Fix Applied
 
 ### Architecture Overview
 **FastAPI + SQLAlchemy (SQLite) + OpenAI/Groq + Pydantic + Alembic**
@@ -58,12 +60,23 @@ app/
 - **Fallback**: Mock with realistic data
 
 ### Setup & Demo
+
+**Local:**
 ```bash
+pip install --upgrade pip
 pip install -r requirements.txt
-cp .env.example .env  # Add your API key
-python run.py         # FastAPI http://localhost:8000/docs
-streamlit run streamlit_app.py  # UI
+cp .env.example .env  # Add OPENAI_API_KEY
+# Terminal 1: python run.py
+# Terminal 2: streamlit run streamlit_app.py
 ```
+
+**Streamlit Cloud:**
+1. Push to GitHub (includes fixed requirements.txt, .streamlit/config.toml)
+2. Connect repo at share.streamlit.io
+3. App file: `streamlit_app.py`
+4. Note: Backend localhost calls won't work (deploy backend separately or make standalone)
+
+**Standalone Streamlit (no backend/DB):** Use `streamlit run app.py` (direct AI calls)
 
 **Test endpoints:**
 ```bash
@@ -73,11 +86,11 @@ curl -X POST "http://localhost:8000/ai/whatsapp" -d '{"message":"order status", 
 ```
 
 ### Evaluation Match
-- Structured AI: ✅ Pydantic + JSON schemas
-- Business Logic: ✅ DB CRUD, impact factors
-- Clean Arch: ✅ Separation, dependency injection
-- Useful: ✅ Production-ready APIs/UI
-- Creativity: ✅ Dynamic mocks, WhatsApp logic
+- Structured AI:  Pydantic + JSON schemas
+- Business Logic:  DB CRUD, impact factors
+- Clean Arch:  Separation, dependency injection
+- Useful:  Production-ready APIs/UI
+- Creativity:  Dynamic mocks, WhatsApp logic
 
 **Demo Video:** [Record Streamlit + /docs + DB query]
 
