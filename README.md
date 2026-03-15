@@ -1,8 +1,8 @@
-# Rayeva – AI Systems Assignment Submission ✅
+# Rayeva – AI Systems Assignment Submission 
 
 ## Role: Full Stack / AI Intern - COMPLETE
 
-## 🚀 Streamlit Cloud Deployment Fix Applied
+##  Streamlit Cloud Deployment Fix Applied
 
 ### Architecture Overview
 **FastAPI + SQLAlchemy (SQLite) + OpenAI/Groq + Pydantic + Alembic**
@@ -86,11 +86,11 @@ curl -X POST "http://localhost:8000/ai/whatsapp" -d '{"message":"order status", 
 ```
 
 ### Evaluation Match
-- Structured AI: ✅ Pydantic + JSON schemas
-- Business Logic: ✅ DB CRUD, impact factors
-- Clean Arch: ✅ Separation, dependency injection
-- Useful: ✅ Production-ready APIs/UI
-- Creativity: ✅ Dynamic mocks, WhatsApp logic
+- Structured AI:  Pydantic + JSON schemas
+- Business Logic:  DB CRUD, impact factors
+- Clean Arch:  Separation, dependency injection
+- Useful:  Production-ready APIs/UI
+- Creativity:  Dynamic mocks, WhatsApp logic
 
 **Demo Video:** [Record Streamlit + /docs + DB query]
 
